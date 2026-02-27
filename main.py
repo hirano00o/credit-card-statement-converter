@@ -52,7 +52,7 @@ def _save(df: pd.DataFrame, card_type: CardType, name: str):
     if card_type == CardType.AMEX:
         df.to_csv("amex_" + name, header=False, index=True)
     if card_type == CardType.VISA:
-        df.to_csv("mitsui_" + name, header=False, index=True)
+        df.to_csv("smbc_visa_" + name, header=False, index=True)
 
 
 if len(sys.argv) < 2:
